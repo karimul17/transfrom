@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes sliding{
+            0%{
+                background-color: red;
+                left: 0;
+                top: 0;
+                
+
+            }
+            25%{
+               background-color: blue;
+                top: 0;
+                left: 500px;
+            }
+            50%{
+                background-color: green;
+                left: 500px;
+                top: 500px;
+            }
+            75%{
+                background-color: yellow;
+                left: 0;
+                top: 500px;
+            }
+            100%{
+                background-color: deeppink;
+                top: 0;
+                left: 0;
+            }
+               
+            }
+        
+        .feld{
+            background: rgb(4, 213, 217);
+            height: 600px;
+            width: 600px;
+            
+        }
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: relative;
+            background: red;
+            animation: sliding 3s ease-in-out 0.5s infinite alternate ;
+            animation-play-state: running;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="feld">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
